@@ -30,6 +30,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@csstools/selector-specificity@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "@csstools/selector-specificity@npm:3.0.2"
+  peerDependencies:
+    postcss-selector-parser: ^6.0.13
+  checksum: d0c7dae2f1e9536e3e17f00467320a704f3208c76283c29c57fd69d4b83dcf6d062f492ed687c5ffd5f47fada9f0657c2efc89ea18fd4b038f757669553e0095
+  languageName: node
+  linkType: hard
+
 "@eslint-community/eslint-utils@npm:^4.2.0":
   version: 4.4.0
   resolution: "@eslint-community/eslint-utils@npm:4.4.0"
@@ -303,12 +312,38 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@sindresorhus/is@npm:^4.6.0":
+  version: 4.6.0
+  resolution: "@sindresorhus/is@npm:4.6.0"
+  checksum: 33b6fb1d0834ec8dd7689ddc0e2781c2bfd8b9c4e4bacbcb14111e0ae00621f2c264b8a7d36541799d74888b5dccdf422a891a5cb5a709ace26325eedc81e22e
+  languageName: node
+  linkType: hard
+
 "@swc/helpers@npm:0.5.2":
   version: 0.5.2
   resolution: "@swc/helpers@npm:0.5.2"
   dependencies:
     tslib: "npm:^2.4.0"
   checksum: b6fa49bcf6c00571d0eb7837b163f8609960d4d77538160585e27ed167361e9776bd6e5eb9646ffac2fb4d43c58df9ca50dab9d96ab097e6591bc82a75fd1164
+  languageName: node
+  linkType: hard
+
+"@tabler/icons-react@npm:^2.47.0":
+  version: 2.47.0
+  resolution: "@tabler/icons-react@npm:2.47.0"
+  dependencies:
+    "@tabler/icons": "npm:2.47.0"
+    prop-types: "npm:^15.7.2"
+  peerDependencies:
+    react: ^16.5.1 || ^17.0.0 || ^18.0.0
+  checksum: 09a78a1b88aab69a11cd783c7d1bb75aeabe2ed03e3f957d00113dfde974ec73ee850551c430664634469ebcf32db749497a81bd30c01f2fb3425884cba7429c
+  languageName: node
+  linkType: hard
+
+"@tabler/icons@npm:2.47.0":
+  version: 2.47.0
+  resolution: "@tabler/icons@npm:2.47.0"
+  checksum: ffdffa1289ca958f7d7c06c19e35c51a664d916df510fb44fb673abc2031747f2b3c47e21ba4c1ca07a6872b793f2063179bbbfb6afd1c68b522ca333460a7f3
   languageName: node
   linkType: hard
 
@@ -764,6 +799,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"char-regex@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "char-regex@npm:1.0.2"
+  checksum: 57a09a86371331e0be35d9083ba429e86c4f4648ecbe27455dbfb343037c16ee6fdc7f6b61f433a57cc5ded5561d71c56a150e018f40c2ffb7bc93a26dae341e
+  languageName: node
+  linkType: hard
+
 "client-only@npm:0.0.1":
   version: 0.0.1
   resolution: "client-only@npm:0.0.1"
@@ -943,10 +985,45 @@ __metadata:
   languageName: node
   linkType: hard
 
+"emoji-library@npm:^0.0.33":
+  version: 0.0.33
+  resolution: "emoji-library@npm:0.0.33"
+  checksum: b12bfaf475ac9f018fbb8c5353bbb1f814146e29fd2caa5ca9d84836b51d08b81c0ee2c2e517b203b04279bfc6521d5fc99b536593dfbde4564facb7cece019f
+  languageName: node
+  linkType: hard
+
 "emoji-regex@npm:^9.2.2":
   version: 9.2.2
   resolution: "emoji-regex@npm:9.2.2"
   checksum: af014e759a72064cf66e6e694a7fc6b0ed3d8db680427b021a89727689671cefe9d04151b2cad51dbaf85d5ba790d061cd167f1cf32eb7b281f6368b3c181639
+  languageName: node
+  linkType: hard
+
+"emoji-shortnames@npm:^3.1.2":
+  version: 3.1.2
+  resolution: "emoji-shortnames@npm:3.1.2"
+  checksum: 0f5c74c6ea49f57cdbfbe28f07629a8cd9ab12c18e7b6c52100c1160bd3f8a6d6d178efe30aedd7923afb7acc157c1d8f92fa7f36b76bbea28910bb21986c691
+  languageName: node
+  linkType: hard
+
+"emoji-toolkit@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "emoji-toolkit@npm:8.0.0"
+  checksum: be58f02c75acf41a237df26b9dec5bf0b9d1a43f4d0e0224e630f1e634ebee487580cefdb3cc533a88f9753034f26078a7b90548581dd1df19697d1ec8409d05
+  languageName: node
+  linkType: hard
+
+"emojilib@npm:^2.4.0":
+  version: 2.4.0
+  resolution: "emojilib@npm:2.4.0"
+  checksum: 6e66ba8921175842193f974e18af448bb6adb0cf7aeea75e08b9d4ea8e9baba0e4a5347b46ed901491dcaba277485891c33a8d70b0560ca5cc9672a94c21ab8f
+  languageName: node
+  linkType: hard
+
+"emojis-list@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "emojis-list@npm:3.0.0"
+  checksum: 7dc4394b7b910444910ad64b812392159a21e1a7ecc637c775a440227dcb4f80eff7fe61f4453a7d7603fa23d23d30cc93fe9e4b5ed985b88d6441cd4a35117b
   languageName: node
   linkType: hard
 
@@ -1470,6 +1547,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fastest-levenshtein@npm:^1.0.16":
+  version: 1.0.16
+  resolution: "fastest-levenshtein@npm:1.0.16"
+  checksum: 7e3d8ae812a7f4fdf8cad18e9cde436a39addf266a5986f653ea0d81e0de0900f50c0f27c6d5aff3f686bcb48acbd45be115ae2216f36a6a13a7dbbf5cad878b
+  languageName: node
+  linkType: hard
+
 "fastq@npm:^1.6.0":
   version: 1.13.0
   resolution: "fastq@npm:1.13.0"
@@ -1853,6 +1937,13 @@ __metadata:
   version: 5.2.0
   resolution: "ignore@npm:5.2.0"
   checksum: 7fb7b4c4c52c2555113ff968f8a83b8ac21b076282bfcb3f468c3fb429be69bd56222306c31de95dd452c647fc6ae24339b8047ebe3ef34c02591abfec58da01
+  languageName: node
+  linkType: hard
+
+"immer@npm:^10.0.3":
+  version: 10.0.3
+  resolution: "immer@npm:10.0.3"
+  checksum: 282a4f8479a40f7d12b2b3243c095e3e892bf99058e2ffcdd6b8e9fd143e6a90f2717ab9b6c8b97c927ffb8054465c8f647056f41660dbfd672e240cf1063503
   languageName: node
   linkType: hard
 
@@ -2362,18 +2453,28 @@ __metadata:
   dependencies:
     "@mantine/core": "npm:7.6.1"
     "@mantine/hooks": "npm:7.6.1"
+    "@tabler/icons-react": "npm:^2.47.0"
     "@types/node": "npm:20.8.10"
     "@types/react": "npm:18.2.36"
     "@types/react-dom": "npm:18.2.14"
+    emoji-library: "npm:^0.0.33"
+    emoji-shortnames: "npm:^3.1.2"
+    emoji-toolkit: "npm:^8.0.0"
+    emojis-list: "npm:^3.0.0"
     eslint: "npm:8.53.0"
     eslint-config-next: "npm:14.0.1"
+    fastest-levenshtein: "npm:^1.0.16"
+    immer: "npm:^10.0.3"
     next: "npm:14.0.1"
+    node-emoji: "npm:^2.1.3"
     postcss: "npm:^8.4.31"
+    postcss-nesting: "npm:^12.0.4"
     postcss-preset-mantine: "npm:1.13.0"
     postcss-simple-vars: "npm:^7.0.1"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
     typescript: "npm:5.2.2"
+    zustand: "npm:^4.5.2"
   languageName: unknown
   linkType: soft
 
@@ -2492,6 +2593,18 @@ __metadata:
   bin:
     next: dist/bin/next
   checksum: 3a3ec178da972a141866494f14c32bb81be736eed7de5898687cfdf30c756ef75afc882f53e46b978021eef379d6aa82b43dd6a38ed05d4098dc0075990bac9c
+  languageName: node
+  linkType: hard
+
+"node-emoji@npm:^2.1.3":
+  version: 2.1.3
+  resolution: "node-emoji@npm:2.1.3"
+  dependencies:
+    "@sindresorhus/is": "npm:^4.6.0"
+    char-regex: "npm:^1.0.2"
+    emojilib: "npm:^2.4.0"
+    skin-tone: "npm:^2.0.0"
+  checksum: e688333373563aa8308df16111eee2b5837b53a51fb63bf8b7fbea2896327c5d24c9984eb0c8ca6ac155d4d9c194dcf1840d271033c1b588c7c45a3b65339ef7
   languageName: node
   linkType: hard
 
@@ -2788,6 +2901,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss-nesting@npm:^12.0.4":
+  version: 12.0.4
+  resolution: "postcss-nesting@npm:12.0.4"
+  dependencies:
+    "@csstools/selector-specificity": "npm:^3.0.2"
+    postcss-selector-parser: "npm:^6.0.13"
+  peerDependencies:
+    postcss: ^8.4
+  checksum: f6fdf0d6170d9aa7ebcbd8b74f1b4ea28ad9747e4d211fb64948cb20e5638ba32220ceb5d246125892152827da2b0493d087e7abf392c07053bdf931abc5b6de
+  languageName: node
+  linkType: hard
+
 "postcss-preset-mantine@npm:1.13.0":
   version: 1.13.0
   resolution: "postcss-preset-mantine@npm:1.13.0"
@@ -2807,6 +2932,16 @@ __metadata:
     cssesc: "npm:^3.0.0"
     util-deprecate: "npm:^1.0.2"
   checksum: 51f099b27f7c7198ea1826470ef0adfa58b3bd3f59b390fda123baa0134880a5fa9720137b6009c4c1373357b144f700b0edac73335d0067422063129371444e
+  languageName: node
+  linkType: hard
+
+"postcss-selector-parser@npm:^6.0.13":
+  version: 6.0.15
+  resolution: "postcss-selector-parser@npm:6.0.15"
+  dependencies:
+    cssesc: "npm:^3.0.0"
+    util-deprecate: "npm:^1.0.2"
+  checksum: 48b425d6cef497bcf6b7d136f6fd95cfca43026955e07ec9290d3c15457de3a862dbf251dd36f42c07a0d5b5ab6f31e41acefeff02528995a989b955505e440b
   languageName: node
   linkType: hard
 
@@ -3224,6 +3359,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"skin-tone@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "skin-tone@npm:2.0.0"
+  dependencies:
+    unicode-emoji-modifier-base: "npm:^1.0.0"
+  checksum: 82d4c2527864f9cbd6cb7f3c4abb31e2224752234d5013b881d3e34e9ab543545b05206df5a17d14b515459fcb265ce409f9cfe443903176b0360cd20e4e4ba5
+  languageName: node
+  linkType: hard
+
 "slash@npm:^3.0.0":
   version: 3.0.0
   resolution: "slash@npm:3.0.0"
@@ -3603,6 +3747,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"unicode-emoji-modifier-base@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "unicode-emoji-modifier-base@npm:1.0.0"
+  checksum: b37623fcf0162186debd20f116483e035a2d5b905b932a2c472459d9143d446ebcbefb2a494e2fe4fa7434355396e2a95ec3fc1f0c29a3bc8f2c827220e79c66
+  languageName: node
+  linkType: hard
+
 "uri-js@npm:^4.2.2":
   version: 4.4.1
   resolution: "uri-js@npm:4.4.1"
@@ -3675,6 +3826,15 @@ __metadata:
     "@types/react":
       optional: true
   checksum: 89f0018fd9aee1fc17c85ac18c4bf8944d460d453d0d0e04ddbc8eaddf3fa591e9c74a1f8a438a1bff368a7a2417fab380bdb3df899d2194c4375b0982736de0
+  languageName: node
+  linkType: hard
+
+"use-sync-external-store@npm:1.2.0":
+  version: 1.2.0
+  resolution: "use-sync-external-store@npm:1.2.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: ac4814e5592524f242921157e791b022efe36e451fe0d4fd4d204322d5433a4fc300d63b0ade5185f8e0735ded044c70bcf6d2352db0f74d097a238cebd2da02
   languageName: node
   linkType: hard
 
@@ -3796,5 +3956,25 @@ __metadata:
   version: 0.1.0
   resolution: "yocto-queue@npm:0.1.0"
   checksum: dceb44c28578b31641e13695d200d34ec4ab3966a5729814d5445b194933c096b7ced71494ce53a0e8820685d1d010df8b2422e5bf2cdea7e469d97ffbea306f
+  languageName: node
+  linkType: hard
+
+"zustand@npm:^4.5.2":
+  version: 4.5.2
+  resolution: "zustand@npm:4.5.2"
+  dependencies:
+    use-sync-external-store: "npm:1.2.0"
+  peerDependencies:
+    "@types/react": ">=16.8"
+    immer: ">=9.0.6"
+    react: ">=16.8"
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    immer:
+      optional: true
+    react:
+      optional: true
+  checksum: aee26f11facebb39b016e89539f72a72c2c00151208907fc909c3cedd455728240e09e01d98ebd3b63a2a3518a5917eac5de6c853743ca55a1655296d750bb48
   languageName: node
   linkType: hard
