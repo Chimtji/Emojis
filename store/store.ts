@@ -3,7 +3,7 @@ import { subscribeWithSelector, devtools } from "zustand/middleware";
 import { TStore } from "./types";
 import { produce } from "immer";
 import { getAllEmojis } from "../components/Emojis/helpers";
-import { TEmoji, TEmojiCategory, TEmojis } from "../components/Emojis/types";
+import { TEmoji, TEmojiCategory } from "../components/Emojis/types";
 
 const useStore = create<TStore>()(
   subscribeWithSelector(

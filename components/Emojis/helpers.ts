@@ -1,7 +1,5 @@
 import * as joypixels from "emoji-toolkit";
 import { TEmoji, TEmojiCategory, TEmojis, TTone } from "./types";
-import { levenshteinDistance } from "../../utilities";
-import { distance } from "fastest-levenshtein";
 
 export const resolveTone = (toned: string[], names: string[]): TTone => {
   const string = names.join("");
