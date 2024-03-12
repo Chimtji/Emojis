@@ -15,52 +15,95 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 56px);
+  grid-template-columns: repeat(auto-fit, 56px);
   justify-content: center;
 }
 
-.icon {
-  display: block;
+.iconWrapper {
+  --duration: 0.5s;
 
   &[data-hide="true"] {
     display: none;
   }
-}
 
-.radioInner {
-}
-.radioIcon {
-  display: none;
-}
-.radioRadio {
-  &:checked {
-    border: 0.2em solid white;
+  .iconInner {
+    position: relative;
   }
-  &[data-tone="yellow"] {
-    background-color: rgb(243, 210, 91) !important;
+
+  .top,
+  .bottom,
+  .right,
+  .left {
+    position: absolute;
+    display: block;
+    background: var(--mantine-color-green-5);
+    transition: all calc(var(--duration) / 5) linear;
   }
-  &[data-tone="lightest"] {
-    background-color: rgb(243, 223, 193) !important;
+  .top,
+  .bottom {
+    width: 100%;
+    height: 0.15em;
+    transform: scaleX(0);
   }
-  &[data-tone="lighter"] {
-    background-color: rgb(216, 188, 154) !important;
+
+  .left,
+  .right {
+    width: 0.15em;
+    height: 100%;
+    transform: scaleY(0);
   }
-  &[data-tone="medium"] {
-    background-color: rgb(183, 146, 109) !important;
+
+  .top,
+  .right {
+    top: 0;
   }
-  &[data-tone="darker"] {
-    background-color: rgb(144, 102, 66) !important;
+
+  .top {
+    left: 0;
+    transform-origin: top left;
+    /* transition-delay: 0s;*/
   }
-  &[data-tone="darkest"] {
-    background-color: rgb(85, 71, 60) !important;
+  .right {
+    transform-origin: top left;
+    right: 0;
+    /* transition-delay: calc(var(--duration) / 5); */
   }
-  &[data-tone="all"] {
-    background-color: #ba2d0b !important;
-    background-image: linear-gradient(
-      319deg,
-      #ba2d0b 0%,
-      #fe7f2d 37%,
-      #ffbf46 100%
-    ) !important;
+  .bottom {
+    bottom: 0;
+    right: 0;
+    /* transition-delay: calc(var(--duration) / 2.5); */
+    transform-origin: top right;
+  }
+  .left {
+    top: 0;
+    left: 0;
+    transform-origin: bottom left;
+    /* transition-delay: calc(var(--duration) / 1.33); */
+  }
+
+  &[data-copied="true"] {
+    transition: background-color 0.15s ease-in-out;
+    transition-delay: 0.35s;
+    background-color: var(--mantine-color-green-5);
+    .top {
+      transition-delay: 0s;
+    }
+    .right {
+      transition-delay: 0.1s;
+    }
+    .bottom {
+      transition-delay: 0.2s;
+    }
+    .left {
+      transition-delay: 0.3s;
+    }
+    .top,
+    .bottom {
+      transform: scaleX(1);
+    }
+    .left,
+    .right {
+      transform: scaleY(1);
+    }
   }
 }

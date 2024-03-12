@@ -6,21 +6,30 @@ import { useShallow } from "zustand/react/shallow";
 import { EmojiGrid } from "./EmojiGrid";
 
 export const Emojis = () => {
-  const { emojis: data } = useStore(
-    useShallow((state) => ({ emojis: state.emojis }))
+  const { allData, filteredData } = useStore(
+    useShallow((state) => ({
+      allData: state.allEmojis,
+      filteredData: state.filteredEmojis,
+    }))
   );
 
   return (
     <Box w="100%">
       <Box>
-        <EmojiGrid header="people" list={data.people} />
-        <EmojiGrid header="activity" list={data.activity} />
-        <EmojiGrid header="food" list={data.food} />
-        <EmojiGrid header="nature" list={data.nature} />
-        <EmojiGrid header="travel" list={data.travel} />
-        <EmojiGrid header="objects" list={data.objects} />
-        <EmojiGrid header="symbols" list={data.symbols} />
-        <EmojiGrid header="flags" list={data.flags} />
+        {filteredData.length > 0 ? (
+          <EmojiGrid list={filteredData} mt="2em" />
+        ) : (
+          <>
+            <EmojiGrid header="people" list={allData.people} />
+            <EmojiGrid header="activity" list={allData.activity} />
+            <EmojiGrid header="food" list={allData.food} />
+            <EmojiGrid header="nature" list={allData.nature} />
+            <EmojiGrid header="travel" list={allData.travel} />
+            <EmojiGrid header="objects" list={allData.objects} />
+            <EmojiGrid header="symbols" list={allData.symbols} />
+            <EmojiGrid header="flags" list={allData.flags} />
+          </>
+        )}
       </Box>
     </Box>
   );

@@ -11,6 +11,7 @@
   "dependencies": {
     "@mantine/core": "7.6.1",
     "@mantine/hooks": "7.6.1",
+    "@mantine/notifications": "^7.6.1",
     "@tabler/icons-react": "^2.47.0",
     "emoji-library": "^0.0.33",
     "emoji-shortnames": "^3.1.2",

@@ -6,10 +6,17 @@ import classes from "./Controls.module.css";
 import { TTone } from "../Emojis/types";
 import useStore from "../../store/store";
 import { useShallow } from "zustand/react/shallow";
+import { useDebouncedState } from "@mantine/hooks";
+import { useEffect } from "react";
 
 const Controls = () => {
-  const { tone, setTone } = useStore(
-    useShallow((state) => ({ tone: state.tone, setTone: state.setTone }))
+  const [search, setSearch] = useDebouncedState("", 200);
+  const { tone, setTone, setFilter } = useStore(
+    useShallow((state) => ({
+      tone: state.tone,
+      setTone: state.setTone,
+      setFilter: state.setFilter,
+    }))
   );
   const tones: TTone[] = [
     "yellow",
@@ -21,6 +28,10 @@ const Controls = () => {
     "all",
   ];
 
+  useEffect(() => {
+    setFilter(search);
+  }, [search]);
+
   return (
     <Box>
       <TextInput
@@ -29,6 +40,7 @@ const Controls = () => {
         size="lg"
         placeholder="Search for an emoji"
         leftSection={<IconSearch />}
+        onChange={(e) => setSearch(e.currentTarget.value)}
       />
       <Radio.Group
         w="max-content"
@@ -41,6 +53,7 @@ const Controls = () => {
         <Group mt="xs">
           {tones.map((tone) => (
             <Radio
+              key={tone}
               value={tone}
               data-tone={tone}
               classNames={{
