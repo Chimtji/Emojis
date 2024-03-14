@@ -12,7 +12,6 @@ import { TEmoji } from "./types";
 import useStore from "../../store/store";
 import { useShallow } from "zustand/react/shallow";
 import { useState } from "react";
-import { notifications } from "@mantine/notifications";
 import { useTimeout } from "@mantine/hooks";
 
 export const Emoji = ({
@@ -40,7 +39,6 @@ export const Emoji = ({
           <ActionIcon
             onMouseLeave={() => {
               setTooltip(undefined);
-              // setHover(false);
             }}
             onMouseEnter={() => {
               setTooltip(data.name[0].replaceAll(":", "").replaceAll("_", " "));
@@ -50,10 +48,6 @@ export const Emoji = ({
               copy();
               start();
               setStyleTrigger(true);
-              notifications.show({
-                title: "Default notification",
-                message: "Hey there, your code is awesome! 🤥",
-              });
             }}
             className={classes.iconWrapper}
             classNames={{
